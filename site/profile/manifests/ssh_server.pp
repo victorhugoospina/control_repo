@@ -4,7 +4,7 @@ class profile::ssh_server {
     }
     service { 'sshd':
         ensure  =>  'running',
-        eanble  =>  'true',
+        enable  =>  'true',
     }
     ssh_authorized_key {'root@master.puppet.vm':
         ensure  =>  'present',
